@@ -1,0 +1,251 @@
+
+
+<html>
+	<head>
+	  <link href='https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400' rel='stylesheet' type='text/css'>
+		<!--<link href='https://fonts.googleapis.com/css?family=Gentium+Basic:400,700&subset=latin,latin-ext' rel='stylesheet'type='text/css'>-->
+		<!--<link href='https://fonts.googleapis.com/css?family=Fjord+One' rel='stylesheet' type='text/css'>-->
+		<!--<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>-->
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="jquery-latest.js" type="text/javascript"> </script>
+  	<script language="JavaScript" type="text/javascript">
+		  //<![CDATA[
+		  function toggle(id) {
+			  $("#"+id).slideToggle();
+        return false;
+      };
+      
+      function tall() {
+        $(".hide").toggle();
+        $(".show").toggle();
+        return false;
+      };
+  		//]]>
+  	</script>
+  	<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+		</script>
+  	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+		<script>
+  			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  			ga('create', 'UA-57801305-1', 'auto');
+  			ga('send', 'pageview');
+		</script>
+		
+		<title>Justin Thaler</title>
+  </head>
+  
+  
+  <body> 
+	  <div id="outerbox">
+
+	<!--begin contact info and photo-->
+	<img class="imgright" src="./myphoto.png" width= 144 px height= 192 px>
+	<h1>Yidan Jin</h1>
+	PhD candidate <br>
+	<a href="https://econ.georgetown.edu/">Georgetown University  <br>
+	Department of Economics </a> <br>
+	Intercultural Center 580 </a> <br>
+	37th and O Streets, N.W. <br>
+	Washington, DC 20057 <br>
+		
+	<br>
+	e-mail: yj105@georgetown.edu<br><br>
+	<!--end contact info and photo-->
+
+<div>
+<ul id="nav">
+		<!--<li><a href="#news">News</a></li>-->
+			<li><a href="#aboutme">About Me</a></li>
+			<li><a href="#Research">Research</a></li>
+      <li><a href="#teaching">Teaching</a></li>
+      <li><a href="ThalerCV.pdf">CV</a></li>
+      
+      <!--<li><a href="CATD.html">2018 Capital Area Theory Day</a></li>-->
+   </ul>
+   </div>
+   
+   <!--<a name="News"></a>	<h1> News </h1> 
+   <ul>
+   <li> <a href=http://people.cs.georgetown.edu/~cnewport/>Cal Newport</a> and I are organizing <a href="CATD.html">Capital Area Theory Day 2018</a>
+   at Georgetown on November 16, 2018. Please join us for a lively day of talks and discussions on a range of topics in theoretical computer science.
+	</ul>-->
+	  
+	<!--begin personal info / bio-->
+<a name="aboutme"></a>	<h1> About Me </h1> 
+I am an Economics Ph.D. candidate at Georgetown University.
+My main fields of interest are international trade. I use both theory and empirical methods in my research.
+I am currently on the job market and I will be available for interviews at the 2020 ASSA meetings in San Diego.
+<ul>
+<li> Primary fields: International trade, Applied Microeconomics </li>
+<li> Secondary fields: Labor Economics </li>
+</ul>
+
+
+	
+	<!--begin publist-->
+	<a name="Research"></a><h1><span class="show">Research &nbsp;  </h1>
+		
+	<table>
+	
+	<tr><td valign="top" align="center" width=30px><span>2019</span></td>
+	<td><ul class="publist">	
+	
+	<li>
+		
+		<span class="papertitle"><a href="#" onclick ="return toggle('laurentpolys');">Quantum Lower Bounds for Approximate Counting via Laurent Polynomials</a></span><br>
+		<a href="https://www.scottaaronson.com/">Scott Aaronson</a>,
+		<a href="http://www.robinkothari.com/">Robin Kothari</a>, 
+		William Kretschmer, and Justin Thaler, <br>
+		<comment>Manuscript</comment>
+		<div id="laurentpolys" class="abstract" style="display: none;">
+		<comment>Links:</comment> <A HREF="https://arxiv.org/abs/1904.08914">[arXiv]</A>
+		
+		<br><br>
+		<comment>Abstract:</comment>
+This paper proves new limitations on the power of quantum computers to solve
+approximate counting---that is, multiplicatively estimating the
+size of a nonempty set $S\subseteq \lbrack N]$.
+
+Given only a membership oracle for $S$, it is well known that approximate
+counting takes $\Theta \bigl(\sqrt{N/|S|}\bigr)$ quantum queries. But what
+if a quantum algorithm is also given "QSamples"---i.e., copies of the state $\left\vert
+S\right\rangle =\sum_{i\in S}|i\rangle$---or even the ability to apply
+reflections about $|S\rangle$? Our first main result is that, even then, the
+algorithm needs either $\Theta \bigl(\sqrt{N/\left\vert S\right\vert }\bigr)$
+ queries or else $\Theta \Bigl(\min \bigl\{\left\vert S\right\vert ^{1/3},
+\sqrt{N/\left\vert S\right\vert }\bigr\}\Bigr)$ reflections or samples. 
+We also give  matching upper bounds.
+
+<P>
+
+We prove the lower bound using a novel generalization of the polynomial
+method of Beals et al. to Laurent polynomials, which can have
+negative exponents.  We lower-bound Laurent polynomial degree using two
+methods: a new "explosion argument" that
+pits the positive- and negative-degree parts of the polynomial against each
+other, and a new formulation of the dual polynomials method.
+
+<P>
+Our second main result rules out the possibility of a black-box Quantum
+Merlin-Arthur (or $\mathsf{QMA}$) protocol for proving that a set is large.
+ More precisely, we show that, even if Arthur can make $T$ quantum queries
+to the set $S\subseteq \lbrack N]$, and also receives an $m$-qubit quantum
+witness from Merlin in support of $S$ being large, we have $Tm=\Omega \Bigl(
+\min \bigl\{ \left\vert S\right\vert ,\sqrt{N/\left\vert S\right\vert }
+\bigr\} \Bigr) $.  This resolves the open problem of giving an oracle
+separation between $\mathsf{SBP}$, the complexity class that captures
+approximate counting, and $\mathsf{QMA}$.
+
+<P>
+Note that $\mathsf{QMA}$ is "stronger"
+than the queries+QSamples model in that Merlin's witness can be anything,
+rather than just the specific state $\left\vert S\right\rangle $, but also
+"weaker" in that Merlin's witness cannot
+be trusted.  Intriguingly, Laurent polynomials also play a crucial
+role in our $\mathsf{QMA}$\ lower bound, but in a completely different
+manner than in the queries+QSamples lower bound. This suggests that the
+"Laurent polynomial method" might be
+broadly useful in complexity theory.
+		</div>
+		
+		
+		<li>
+		
+		<span class="papertitle"><a href="#" onclick ="return toggle('MIFE');">Ad Hoc Multi-Input Functional Encryption</a></span><br>
+		<a href="http://www.cse.iitm.ac.in/~shwetaag/">Shweta Agrawal</a>,
+		<a href="http://ciphron.netsoc.ie/">Michael Clear</a>,
+		<a href="http://people.cs.georgetown.edu/~ophir/">Ophir Frieder</a>,
+		<a href="https://people.eecs.berkeley.edu/~sanjamg/">Sanjam Garg</a>,
+		<a href="http://people.cs.georgetown.edu/~adam/">Adam O'Neill</a>,
+		Justin Thaler <br>
+		<comment>Manuscript</comment>
+		<div id="MIFE" class="abstract" style="display: none;">
+		<comment>Links:</comment> <A HREF="https://eprint.iacr.org/2019/356">[e-print]</A>
+		
+		<br><br>
+		<comment>Abstract:</comment>
+Consider sources that supply sensitive data to an aggregator. 
+Standard encryption only hides the data from eavesdroppers, 
+but using specialized encryption one can hope to hide the data 
+(to the extent possible) from the aggregator itself. For flexibility and 
+security, we envision schemes that allow sources to supply encrypted data, 
+such that at any point a dynamically chosen subset of sources can allow an 
+agreed-upon joint function of their data to be computed by the aggregator. 
+A primitive called multi-input functional encryption (MIFE), due to Goldwasser et al. 
+(EUROCRYPT 2014), comes close, but has two main limitations: 
+ it requires trust in a third party, who is able to decrypt all the data, and 
+ it requires function arity to be fixed at setup time and to be equal to the number of parties.
+
+<P>
+To drop these limitations, we introduce a new notion of ad hoc MIFE. 
+In our setting, each source generates its own public key and issues individual, 
+function-specific secret keys to an aggregator. For successful decryption, an 
+aggregator must obtain a separate key from each source whose ciphertext is being 
+computed upon. The aggregator could obtain multiple such secret keys from a user corresponding 
+to functions of varying arity. For this primitive, we obtain the following results: 
+– We show that standard MIFE for general functions can be bootstrapped to ad hoc MIFE for free, 
+i.e. without making any additional assumption. 
+– We provide a direct construction of ad hoc MIFE for the inner product functionality based on the Learning with Errors 
+(LWE) assumption. This yields the first construction of this natural primitive based on a standard assumption.
+<P>
+At a technical level, our results are obtained by combining standard MIFE schemes and 
+two-round secure multiparty computation (MPC) protocols in novel 
+ways highlighting an interesting interplay between MIFE and two-round 
+MPC in the construction of non interactive primitives.
+		</div>
+		
+	
+	
+	
+			
+    </ul></td></tr></table>
+    
+  <!--begin teaching-->
+	<br>
+	<a name="teaching"></a>	<h1> Teaching </h1>
+	Georgetown University
+	<UL>
+	<LI>
+		International Trade (undergraduate level, course instructor)</a> (Summer 2017)
+		<LI>
+				Intermediate Macroeconomics (undergraduate level, recitation instructor)</a> (Spring 2017)
+				
+			<LI>
+		International Finance (undergraduate level, TA)</a> (Fall 2016, Fall 2017)
+	
+			</LI>
+			<LI>
+			International Trade (undergraduate level, TA)</a> (Spring 2018, Fall 2018)
+			</LI>
+			
+		
+			</LI>
+			
+			</UL> 
+	
+			Smith College
+	<UL>
+	<LI>
+			Calculus II, Linear Algebra, Intermediate Microeconomics (undergraduate level, TA) </a> (Fall 2012-Spring 2014)
+			
+			</UL> 
+		<!--end teaching-->
+		
+					
+		
+		
+		
+	
+ 		
+ 		<h1> Last Updated </h1>
+    	April 28, 2019.
+ 		<br>
+		
+
+	</body>
+</html>
