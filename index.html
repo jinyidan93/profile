@@ -63,7 +63,7 @@
 			<li><a href="#aboutme">About Me</a></li>
 			<li><a href="#Research">Research</a></li>
       <li><a href="#teaching">Teaching</a></li>
-      <li><a href="ThalerCV.pdf">CV</a></li>
+      <li><a href="./papers/resume.pdf">CV</a></li>
       
       <!--<li><a href="CATD.html">2018 Capital Area Theory Day</a></li>-->
    </ul>
@@ -78,11 +78,11 @@
 	<!--begin personal info / bio-->
 <a name="aboutme"></a>	<h1> About Me </h1> 
 I am an Economics Ph.D. candidate at Georgetown University.
-My main fields of interest are international trade. I use both theory and empirical methods in my research.
+My main field of interest are international trade. I use both theory and empirical methods in my research.
 I am currently on the job market and I will be available for interviews at the 2020 ASSA meetings in San Diego.
 <ul>
 <li> Primary fields: International trade, Applied Microeconomics </li>
-<li> Secondary fields: Labor Economics </li>
+<li> Secondary fields: Labor Economics, Development Economics </li>
 </ul>
 
 
@@ -95,114 +95,135 @@ I am currently on the job market and I will be available for interviews at the 2
 	<tr><td valign="top" align="center" width=30px><span>2019</span></td>
 	<td><ul class="publist">	
 	
+
+	<li>
+	
+		<span class="papertitle"><a href="#" onclick ="return toggle('JMP');">Special Economic Zones: A Welfare Analysis of Labor Market Spillover Effect (Job Market Paper)</a></span><br>
+		Yidan Jin <br>
+		<div id="JMP" class="abstract" style="display: none;">
+		<comment>Links:</comment> <A HREF="./papers/labor_spillover.pdf">[Job Market Paper]</A>
+		
+		<br><br>
+		<comment>Abstract:</comment>
+		This paper identifies a negative horizontal spillover of Special Economic Zones (SEZs) built in China 
+		and analyzes their localized effects on firm productivity, wages, and labor market competition. The 
+		study shows both empirically and theoretically that labor market competition is responsible for the 
+		negative spillover effect. With posi- tive assortative matching between workers’ skill and firms’ technology,
+			SEZs shift the zone firm’s productivity upwards, increase wages. This results in a negative effect on 
+			non-zone firms. Consequently, there is an overall positive welfare gain from SEZs, with welfare gain 
+			or zone firms and welfare loss for non-zone firms. The analysis provides caveats in analyzing the SEZ 
+			policy in terms of welfare distribution and firm perfor- mance in many developing countries.
+
+		</div>
+
+
 	<li>
 		
-		<span class="papertitle"><a href="#" onclick ="return toggle('laurentpolys');">Quantum Lower Bounds for Approximate Counting via Laurent Polynomials</a></span><br>
-		<a href="https://www.scottaaronson.com/">Scott Aaronson</a>,
-		<a href="http://www.robinkothari.com/">Robin Kothari</a>, 
-		William Kretschmer, and Justin Thaler, <br>
-		<comment>Manuscript</comment>
-		<div id="laurentpolys" class="abstract" style="display: none;">
-		<comment>Links:</comment> <A HREF="https://arxiv.org/abs/1904.08914">[arXiv]</A>
+		<span class="papertitle"><a href="#" onclick ="return toggle('citation');">Seizing Research Opportunities: Does Gender Make a Difference?</a></span><br>
+		Dongbo Guo and Yidan Jin<br>
+		<div id="citation" class="abstract" style="display: none;">
+		<comment>Links:</comment> <A HREF="./papers/seizing-research-opportunities0112.pdf">[Paper]</A>
 		
 		<br><br>
 		<comment>Abstract:</comment>
-This paper proves new limitations on the power of quantum computers to solve
-approximate counting---that is, multiplicatively estimating the
-size of a nonempty set $S\subseteq \lbrack N]$.
+		Gender difference in academia and a hostile workplace culture toward women is in- tensifiying 
+		the under-representation of female researchers in economics. This paper examines the gender difference 
+		in economists’ performance of seizing emerging and competitive research opportunities. We collect data 
+		on the publication records of 3,581 economists over the period 2000-2016 and link these data with other 
+		publicly available information on paper and author characteristics. Employing textual analysis techniques 
+		to identify papers’ research fields and Difference-in-Difference specification before and after 2008, 
+		this paper empirically investigates gender difference in seizing the research opportunity triggered by 
+		financial crisis in 2008. Empirical results suggest that male economists perform better in seizing the 
+		research opportunity to expand their research fields to finance-related fields, as well as publishing 
+		more papers on financial crisis. The newly published papers on financial crisis written by female 
+		economists are more difficult to be published in top economic journals, further emphasizing that women’s 
+		innate potential avoiding challenges contributes to the underrepresentation of female economists. 
+		In addition, more experienced and more productive researchers perform better in seizing the research 
+		opportunity triggered by financial crisis.
 
-Given only a membership oracle for $S$, it is well known that approximate
-counting takes $\Theta \bigl(\sqrt{N/|S|}\bigr)$ quantum queries. But what
-if a quantum algorithm is also given "QSamples"---i.e., copies of the state $\left\vert
-S\right\rangle =\sum_{i\in S}|i\rangle$---or even the ability to apply
-reflections about $|S\rangle$? Our first main result is that, even then, the
-algorithm needs either $\Theta \bigl(\sqrt{N/\left\vert S\right\vert }\bigr)$
- queries or else $\Theta \Bigl(\min \bigl\{\left\vert S\right\vert ^{1/3},
-\sqrt{N/\left\vert S\right\vert }\bigr\}\Bigr)$ reflections or samples. 
-We also give  matching upper bounds.
-
-<P>
-
-We prove the lower bound using a novel generalization of the polynomial
-method of Beals et al. to Laurent polynomials, which can have
-negative exponents.  We lower-bound Laurent polynomial degree using two
-methods: a new "explosion argument" that
-pits the positive- and negative-degree parts of the polynomial against each
-other, and a new formulation of the dual polynomials method.
-
-<P>
-Our second main result rules out the possibility of a black-box Quantum
-Merlin-Arthur (or $\mathsf{QMA}$) protocol for proving that a set is large.
- More precisely, we show that, even if Arthur can make $T$ quantum queries
-to the set $S\subseteq \lbrack N]$, and also receives an $m$-qubit quantum
-witness from Merlin in support of $S$ being large, we have $Tm=\Omega \Bigl(
-\min \bigl\{ \left\vert S\right\vert ,\sqrt{N/\left\vert S\right\vert }
-\bigr\} \Bigr) $.  This resolves the open problem of giving an oracle
-separation between $\mathsf{SBP}$, the complexity class that captures
-approximate counting, and $\mathsf{QMA}$.
-
-<P>
-Note that $\mathsf{QMA}$ is "stronger"
-than the queries+QSamples model in that Merlin's witness can be anything,
-rather than just the specific state $\left\vert S\right\rangle $, but also
-"weaker" in that Merlin's witness cannot
-be trusted.  Intriguingly, Laurent polynomials also play a crucial
-role in our $\mathsf{QMA}$\ lower bound, but in a completely different
-manner than in the queries+QSamples lower bound. This suggests that the
-"Laurent polynomial method" might be
-broadly useful in complexity theory.
 		</div>
 		
-		
-		<li>
-		
-		<span class="papertitle"><a href="#" onclick ="return toggle('MIFE');">Ad Hoc Multi-Input Functional Encryption</a></span><br>
-		<a href="http://www.cse.iitm.ac.in/~shwetaag/">Shweta Agrawal</a>,
-		<a href="http://ciphron.netsoc.ie/">Michael Clear</a>,
-		<a href="http://people.cs.georgetown.edu/~ophir/">Ophir Frieder</a>,
-		<a href="https://people.eecs.berkeley.edu/~sanjamg/">Sanjam Garg</a>,
-		<a href="http://people.cs.georgetown.edu/~adam/">Adam O'Neill</a>,
-		Justin Thaler <br>
-		<comment>Manuscript</comment>
-		<div id="MIFE" class="abstract" style="display: none;">
-		<comment>Links:</comment> <A HREF="https://eprint.iacr.org/2019/356">[e-print]</A>
+	<li>
+	
+		<span class="papertitle"><a href="#" onclick ="return toggle('sez');">Special Economic Zones performance in China: Firm Productivity and Exporting Behaviour</a></span><br>
+		Yidan Jin<br>
+		<div id="sez" class="abstract" style="display: none;">
+		<comment>Links:</comment> <A HREF="./papers/seizing-research-opportunities0112.pdf">[Paper]</A>
 		
 		<br><br>
 		<comment>Abstract:</comment>
-Consider sources that supply sensitive data to an aggregator. 
-Standard encryption only hides the data from eavesdroppers, 
-but using specialized encryption one can hope to hide the data 
-(to the extent possible) from the aggregator itself. For flexibility and 
-security, we envision schemes that allow sources to supply encrypted data, 
-such that at any point a dynamically chosen subset of sources can allow an 
-agreed-upon joint function of their data to be computed by the aggregator. 
-A primitive called multi-input functional encryption (MIFE), due to Goldwasser et al. 
-(EUROCRYPT 2014), comes close, but has two main limitations: 
- it requires trust in a third party, who is able to decrypt all the data, and 
- it requires function arity to be fixed at setup time and to be equal to the number of parties.
+		Gender difference in academia and a hostile workplace culture toward women is in- tensifiying 
+		the under-representation of female researchers in economics. This paper examines the gender difference 
+		in economists’ performance of seizing emerging and competitive research opportunities. We collect data 
+		on the publication records of 3,581 economists over the period 2000-2016 and link these data with other 
+		publicly available information on paper and author characteristics. Employing textual analysis techniques 
+		to identify papers’ research fields and Difference-in-Difference specification before and after 2008, 
+		this paper empirically investigates gender difference in seizing the research opportunity triggered by 
+		financial crisis in 2008. Empirical results suggest that male economists perform better in seizing the 
+		research opportunity to expand their research fields to finance-related fields, as well as publishing 
+		more papers on financial crisis. The newly published papers on financial crisis written by female 
+		economists are more difficult to be published in top economic journals, further emphasizing that women’s 
+		innate potential avoiding challenges contributes to the underrepresentation of female economists. 
+		In addition, more experienced and more productive researchers perform better in seizing the research 
+		opportunity triggered by financial crisis.
 
-<P>
-To drop these limitations, we introduce a new notion of ad hoc MIFE. 
-In our setting, each source generates its own public key and issues individual, 
-function-specific secret keys to an aggregator. For successful decryption, an 
-aggregator must obtain a separate key from each source whose ciphertext is being 
-computed upon. The aggregator could obtain multiple such secret keys from a user corresponding 
-to functions of varying arity. For this primitive, we obtain the following results: 
-– We show that standard MIFE for general functions can be bootstrapped to ad hoc MIFE for free, 
-i.e. without making any additional assumption. 
-– We provide a direct construction of ad hoc MIFE for the inner product functionality based on the Learning with Errors 
-(LWE) assumption. This yields the first construction of this natural primitive based on a standard assumption.
-<P>
-At a technical level, our results are obtained by combining standard MIFE schemes and 
-two-round secure multiparty computation (MPC) protocols in novel 
-ways highlighting an interesting interplay between MIFE and two-round 
-MPC in the construction of non interactive primitives.
 		</div>
+	
+	<li>
+
+		<span class="papertitle"><a href="#" onclick ="return toggle('india');">Trade Policy Change and Employment Informality in India</a></span><br>
+		Yidan Jin</a> and
+		<a href="https://rubinaverma.weebly.com/">Rubina Verma<br>
+		<div id="india" class="abstract" style="display: none;">
+		<comment>Links:</comment> <A HREF="./papers/seizing-research-opportunities0112.pdf">[Paper]</A>
 		
+		<br><br>
+		<comment>Abstract:</comment>
+		Gender difference in academia and a hostile workplace culture toward women is in- tensifiying 
+		the under-representation of female researchers in economics. This paper examines the gender difference 
+		in economists’ performance of seizing emerging and competitive research opportunities. We collect data 
+		on the publication records of 3,581 economists over the period 2000-2016 and link these data with other 
+		publicly available information on paper and author characteristics. Employing textual analysis techniques 
+		to identify papers’ research fields and Difference-in-Difference specification before and after 2008, 
+		this paper empirically investigates gender difference in seizing the research opportunity triggered by 
+		financial crisis in 2008. Empirical results suggest that male economists perform better in seizing the 
+		research opportunity to expand their research fields to finance-related fields, as well as publishing 
+		more papers on financial crisis. The newly published papers on financial crisis written by female 
+		economists are more difficult to be published in top economic journals, further emphasizing that women’s 
+		innate potential avoiding challenges contributes to the underrepresentation of female economists. 
+		In addition, more experienced and more productive researchers perform better in seizing the research 
+		opportunity triggered by financial crisis.
+
+		</div>
 	
-	
-	
+	<tr><td valign="top" align="center" width=30px><span>2015</span></td>
+	<td><ul class="publist">
+	<li>
+
+			<span class="papertitle"><a href="#" onclick ="return toggle('income');">Income Inequality and Financial Market
+					Participation: Rural and Urban China</a></span><br>
+			Yidan Jin<br>
+			<div id="income" class="abstract" style="display: none;">
+			<comment>Published at Massachusetts Undergraduate Journal of Economics (MUJE) Volume 3</comment>
+			<comment>Links:</comment> <A HREF="https://www.umass.edu/economics/sites/default/files/FinalMUJE2015.pdf">[Paper]</A>
 			
+			<br><br>
+			<comment>Abstract:</comment>
+			Based on 2013 China Household finance Survey data, this study examines: first, the labor income gaps
+			between rural and urban individuals in China, and second, the financial market participation of Chinese
+			households in investment products and loans. It applies an extended model of the gap decomposition
+			method among rural and urban dwellers to study the determinants of individual labor income inequality. 
+			The decomposition results support the hypothesis that the difference occurs because of gaps in human capital 
+			measured by education and occupation. At the household level, the Chinese financial market participation rate is 
+			found to be determined by household income, household size, sufficient knowledge of financial products, and the 
+			availability and convenience of financial services. This study confirms rural-urban inequality that urban households 
+			have a higher rate of participation in financial markets. Household income, available and convenient financial
+			services, and sufficient knowledge of financial products positively affect financial market participation in China. 
+			This paper contributes to the existing literature by using the China Household Finance Survey data to study the rural-urban 
+			inequality of both income and wealth in China.
+	
+			</div>
+
     </ul></td></tr></table>
     
   <!--begin teaching-->
@@ -222,7 +243,9 @@ MPC in the construction of non interactive primitives.
 			<LI>
 			International Trade (undergraduate level, TA)</a> (Spring 2018, Fall 2018)
 			</LI>
-			
+			<LI>
+			International Economics (undergraduate level, TA)</a> (Fall 2019)
+			</LI>			
 		
 			</LI>
 			
